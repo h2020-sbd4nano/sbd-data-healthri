@@ -1,0 +1,35 @@
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sbd:   <https://www.sbd4nano.eu/rdf/#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+
+<https://www.health-ri.nl/services/health-ri-service-catalogue>
+ a                    void:DatasetDescription ;
+ dc:source            <https://www.health-ri.nl/> ;
+ dct:title            "Health-RI tools and services"@en ;
+ foaf:img             <https://www.health-ri.nl/sites/healthri/files/styles/service_single_logo/public/images/HealthRI_Primary_RGB.jpg.PNG?itok=veW2kxsV> ;
+ dct:license          <http://creativecommons.org/publicdomain/zero/1.0/> . # license of this metadata
+
+<https://www.health-ri.nl/services/ldot-workflow-tool-clinical-research> a sbd:Resource ;
+  dc:source <https://www.health-ri.nl/services/health-ri-service-catalogue> ;
+  rdfs:label "Ldot" ;
+  dc:description "Ldot is a web-based tool, designed to monitor the study logistics and guard the progress of your research project."@en ;
+  dct:license <http://example.com/unknown> ;
+  foaf:page <https://software.memic.maastrichtuniversity.nl/trait_ldot> .
+
+<https://www.health-ri.nl/services/cbioportal> a sbd:Resource ;
+  dc:source <https://www.health-ri.nl/services/health-ri-service-catalogue> ;
+  rdfs:label "Health-RI cBioPortal" ;
+  dc:description "Explore, visualize, analyze, and share multidimensional genomics data sets."@en ;
+  dct:license <http://example.com/unknown> ;
+  foaf:page <https://cbioportal.health-ri.nl/> .
+
+<https://www.health-ri.nl/services/icrf-generator> a sbd:Resource ;
+  dc:source <https://www.health-ri.nl/services/health-ri-service-catalogue> ;
+  rdfs:label "The iCRF Generator" ;
+  dc:description "Generate Interoperable CRFs for major EDC. The iCRF Generator provides access to several well-known online codebooks and allows the user to select items from these codebooks to build their case report forms."@en ;
+  dct:license <http://example.com/unknown> ;
+  foaf:page <https://github.com/aderidder/iCRFGenerator/> .
